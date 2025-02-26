@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_hero_carousel_items",
+  "info": {
+    "displayName": "Carousel Item",
+    "icon": "cast"
+  },
+  "options": {},
+  "attributes": {
+    "carouselImage": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    },
+    "carouselText": {
+      "type": "blocks",
+      "required": true
+    },
+    "carouselButtonText": {
+      "type": "string",
+      "default": "Button text"
+    },
+    "carouselButtonLink": {
+      "type": "string"
+    }
+  }
+}
