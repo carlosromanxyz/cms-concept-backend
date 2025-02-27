@@ -16,13 +16,10 @@
       "default": "Landing Title",
       "required": true
     },
-    "landingContent": {
-      "type": "dynamiczone",
-      "components": [
-        "sections.site-footer",
-        "sections.site-header"
-      ],
-      "required": true
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
     }
   }
 }

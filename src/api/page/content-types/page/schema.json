@@ -4,7 +4,8 @@
   "info": {
     "singularName": "page",
     "pluralName": "pages",
-    "displayName": "Page"
+    "displayName": "Page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -13,14 +14,6 @@
     "title": {
       "type": "string",
       "default": "Page Title",
-      "required": true
-    },
-    "pageContent": {
-      "type": "dynamiczone",
-      "components": [
-        "sections.site-header",
-        "sections.site-footer"
-      ],
       "required": true
     }
   }

@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "headers",
+  "info": {
+    "singularName": "header",
+    "pluralName": "headers",
+    "displayName": "Header",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "logo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.site-logo"
+    },
+    "navigation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.header-link"
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.button"
+    }
+  }
+}
