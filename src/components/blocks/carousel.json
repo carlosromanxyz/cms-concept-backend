@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blocks_carousels",
+  "info": {
+    "displayName": "Carousel",
+    "icon": "apps"
+  },
+  "options": {},
+  "attributes": {
+    "carouselBox": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.carousel-item"
+    }
+  }
+}

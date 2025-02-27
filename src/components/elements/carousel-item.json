@@ -2,27 +2,24 @@
   "collectionName": "components_hero_carousel_items",
   "info": {
     "displayName": "Carousel Item",
-    "icon": "cast"
+    "icon": "cast",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "carouselImage": {
-      "allowedTypes": [
-        "images"
-      ],
+    "image": {
       "type": "media",
       "multiple": false,
-      "required": true
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
     },
-    "carouselText": {
+    "text": {
       "type": "blocks",
       "required": true
     },
-    "carouselButtonText": {
-      "type": "string",
-      "default": "Button text"
-    },
-    "carouselButtonLink": {
+    "heading": {
       "type": "string"
     }
   }

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_elements_site_logos",
+  "info": {
+    "displayName": "Site Logo",
+    "icon": "alien"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

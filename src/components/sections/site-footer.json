@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_site_footers",
+  "info": {
+    "displayName": "Site Footer",
+    "icon": "alien"
+  },
+  "options": {},
+  "attributes": {
+    "navigation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.footer-link"
+    }
+  }
+}

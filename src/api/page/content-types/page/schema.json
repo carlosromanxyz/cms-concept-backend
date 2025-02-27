@@ -1,11 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "landings",
+  "collectionName": "pages",
   "info": {
-    "singularName": "landing",
-    "pluralName": "landings",
-    "displayName": "Landing",
-    "description": ""
+    "singularName": "page",
+    "pluralName": "pages",
+    "displayName": "Page"
   },
   "options": {
     "draftAndPublish": true
@@ -13,14 +12,14 @@
   "attributes": {
     "title": {
       "type": "string",
-      "default": "Landing Title",
+      "default": "Page Title",
       "required": true
     },
-    "landingContent": {
+    "pageContent": {
       "type": "dynamiczone",
       "components": [
-        "sections.site-footer",
-        "sections.site-header"
+        "sections.site-header",
+        "sections.site-footer"
       ],
       "required": true
     }

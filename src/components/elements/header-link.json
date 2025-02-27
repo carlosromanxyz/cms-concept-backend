@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_elements_header_links",
+  "info": {
+    "displayName": "Header Link",
+    "icon": "check",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "default": "Text",
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "default": "https://google.cl",
+      "required": true
+    }
+  }
+}

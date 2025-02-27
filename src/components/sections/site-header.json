@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_sections_site_headers",
+  "info": {
+    "displayName": "Site Header",
+    "icon": "alien"
+  },
+  "options": {},
+  "attributes": {
+    "logo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "elements.site-logo"
+    },
+    "siteNavigation": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.header-link"
+    }
+  }
+}
