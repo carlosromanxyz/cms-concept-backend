@@ -2,11 +2,12 @@
   "collectionName": "components_blocks_carousels",
   "info": {
     "displayName": "Carousel",
-    "icon": "apps"
+    "icon": "apps",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "carouselBox": {
+    "item": {
       "type": "component",
       "repeatable": true,
       "component": "elements.carousel-item"

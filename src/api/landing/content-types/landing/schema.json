@@ -20,6 +20,14 @@
       "type": "string",
       "required": true,
       "unique": true
+    },
+    "content": {
+      "type": "dynamiczone",
+      "components": [
+        "blocks.testimonial",
+        "blocks.carousel"
+      ],
+      "required": false
     }
   }
 }
