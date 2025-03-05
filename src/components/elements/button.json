@@ -2,14 +2,15 @@
   "collectionName": "components_elements_buttons",
   "info": {
     "displayName": "Button",
-    "icon": "check"
+    "icon": "check",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "buttonText": {
+    "text": {
       "type": "string"
     },
-    "buttonLink": {
+    "url": {
       "type": "string"
     }
   }
