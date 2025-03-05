@@ -4,6 +4,8 @@ const getPreviewPathname = (uid, { locale, document }): string => {
   // Handle different content types with their specific URL patterns
   switch (uid) {
     // Handle pages with predefined routes
+    case "api::header.header":
+      return "/";
     case "api::homepage.homepage":
       return "/";
     default: {
