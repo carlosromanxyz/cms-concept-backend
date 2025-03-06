@@ -1,5 +1,5 @@
 const getPreviewPathname = (uid, { locale, document }): string => {
-  const { slug } = document;
+  const { slug } = document; // DEV: No borrar se usará en los landings
   
   // Handle different content types with their specific URL patterns
   switch (uid) {
