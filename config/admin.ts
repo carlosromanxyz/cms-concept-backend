@@ -4,11 +4,11 @@ const getPreviewPathname = (uid, { locale, document }): string => {
 
   switch (uid) {
     case "api::header.header":
-      return "/"; // Header with /preview in draft mode
+      return "/";
     case "api::homepage.homepage":
-      return "/"; // Homepage with /preview in draft mode
+      return "/";
     case "api::landing.landing":
-      return `/landing/${slug}/preview`; // Landing pages with /preview
+      return `/landing/${slug}`;
     default:
       return null;
   }
@@ -38,10 +38,12 @@ export default ({ env }) => {
       enabled: true,
       config: {
         allowedOrigins: clientUrl,
-        async handler(uid, { documentId, locale }) {
+        async handler(uid, { documentId, locale, status }) {
           const document = await strapi.documents(uid).findOne({ documentId });
           const pathname = getPreviewPathname(uid, { locale, document });
-          const status = document?.status;
+          console.log('Document:', document);
+          console.log('Status:', status);
+          console.log('Pathname:', pathname);
 
           // Check if the pathname is valid
           if (!pathname) {
@@ -49,11 +51,12 @@ export default ({ env }) => {
           }
 
           const urlSearchParams = new URLSearchParams({
-            pathname,
-            preview: "true",
+            url: pathname,
+            status
           });
           
-          return `${clientUrl}${urlSearchParams}`;
+          // This is to be used in the preview iframe on the Strapi admin
+          return `${clientUrl}/api/draft?${urlSearchParams}`;
         },
       },
     },
