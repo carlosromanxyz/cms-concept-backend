@@ -1,0 +1,13 @@
+services:
+  cms-concept-backend-staging:
+    build:
+      context: ../../
+      dockerfile: docker/staging/Dockerfile
+    image: cms-concept-backend-staging
+    ports:
+      - "1339:1337"
+    environment:
+      NODE_ENV: staging
+    volumes:
+      - ../../:/opt/app
+      - /opt/app/node_modules

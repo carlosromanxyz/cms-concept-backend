@@ -1,0 +1,13 @@
+services:
+  cms-concept-backend-development:
+    build:
+      context: ../../
+      dockerfile: docker/development/Dockerfile
+    image: cms-concept-backend-development
+    ports:
+      - "1338:1337"
+    environment:
+      NODE_ENV: development
+    volumes:
+      - ../../:/opt/app
+      - /opt/app/node_modules
