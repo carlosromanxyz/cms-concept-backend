@@ -16,7 +16,7 @@ const getPreviewPathname = (uid, { locale, document }): string => {
 
 // Strapi admin configuration
 export default ({ env }) => {
-  const clientUrl = env("CLIENT_URL");
+  const clientUrl = env("NEXTJS_APPLICATION_URL");
 
   return {
     auth: {
