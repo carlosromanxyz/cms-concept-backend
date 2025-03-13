@@ -41,9 +41,6 @@ export default ({ env }) => {
         async handler(uid, { documentId, locale, status }) {
           const document = await strapi.documents(uid).findOne({ documentId });
           const pathname = getPreviewPathname(uid, { locale, document });
-          console.log('Document:', document);
-          console.log('Status:', status);
-          console.log('Pathname:', pathname);
 
           // Check if the pathname is valid
           if (!pathname) {
