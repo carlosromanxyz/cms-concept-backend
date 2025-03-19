@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_blocks_financial_indicators",
+  "info": {
+    "displayName": "Financial Indicators",
+    "icon": "apps",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "displayUF": {
+      "type": "boolean",
+      "default": true
+    },
+    "displayIPSA": {
+      "type": "boolean",
+      "default": true
+    },
+    "displayCurrentDolar": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

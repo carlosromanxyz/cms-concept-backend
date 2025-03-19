@@ -12,6 +12,21 @@ export interface BlocksCarousel extends Struct.ComponentSchema {
   };
 }
 
+export interface BlocksFinancialIndicators extends Struct.ComponentSchema {
+  collectionName: 'components_blocks_financial_indicators';
+  info: {
+    description: '';
+    displayName: 'Financial Indicators';
+    icon: 'apps';
+  };
+  attributes: {
+    displayCurrentDolar: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<true>;
+    displayIPSA: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    displayUF: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+  };
+}
+
 export interface BlocksTestimonial extends Struct.ComponentSchema {
   collectionName: 'components_blocks_testimonials';
   info: {
@@ -146,6 +161,7 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'blocks.carousel': BlocksCarousel;
+      'blocks.financial-indicators': BlocksFinancialIndicators;
       'blocks.testimonial': BlocksTestimonial;
       'elements.button': ElementsButton;
       'elements.carousel-item': ElementsCarouselItem;

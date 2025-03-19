@@ -443,7 +443,7 @@ export interface ApiLandingLanding extends Struct.CollectionTypeSchema {
   };
   attributes: {
     content: Schema.Attribute.DynamicZone<
-      ['blocks.testimonial', 'blocks.carousel']
+      ['blocks.testimonial', 'blocks.carousel', 'blocks.financial-indicators']
     >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

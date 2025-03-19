@@ -25,7 +25,8 @@
       "type": "dynamiczone",
       "components": [
         "blocks.testimonial",
-        "blocks.carousel"
+        "blocks.carousel",
+        "blocks.financial-indicators"
       ],
       "required": false
     }
